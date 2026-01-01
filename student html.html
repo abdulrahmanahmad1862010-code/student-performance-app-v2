@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance App v2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Title -->
+     <h1>Student Performance App v2</h1>
+     <!-- Input Section -->
+      <label for="studentName">Student Name:</label>
+      <Input type="text" id="studentName">
+        <label for="score">Score:</label>
+        <input type="number" id="score"
+        min="0" max="100" placeholder="Enter score">
+        <button id="addStudentBtn">Add Student</button>
+        <!-- Table to Show Results -->
+         <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Javascript will insert rows here -->
+            </tbody>
+         </table>
+         <!-- Feedback / Message-->
+          <p id="Feedback"></p>
+          <!-- Link to Javascript -->
+           <script src="script.js"></script>
+</body>
